@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import styled from 'styled-components'
+import {NavBar} from './components/NavBar';
+import {MainContent} from './components/MainContent';
 import './App.css';
 
+
+const AppContainer = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+`
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContainer>
+      <NavBar/>
+      <MainContent/>
+    </AppContainer>
   );
 }
 
