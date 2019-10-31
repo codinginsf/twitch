@@ -2,7 +2,7 @@ export const fetchData = async (search) => {
   try {
     const req = await fetch(`https://api.twitch.tv/kraken/search/games?query=${encodeURI(search)}`, {
       headers: new Headers({
-        "Client-ID": "bozlo4w4g084bkyef778gks86lgsh7",
+        "Client-ID": "secret",
         "Accept": "application/vnd.twitchtv.v5+json"
       })
     })
